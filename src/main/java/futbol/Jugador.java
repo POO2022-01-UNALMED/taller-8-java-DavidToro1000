@@ -23,7 +23,7 @@ public class Jugador extends Futbolista{
     	}
     }
     public String toString() {
-    	return "El futbolista "+getNombre()+" tiene "+getEdad()+" y juega de "+getPosicion()+" con el dorsal "+dorsal+". Ha marcado "+golesMarcados;
+    	return "El futbolista "+getNombre()+" tiene "+getEdad()+", y juega de "+getPosicion()+" con el dorsal "+dorsal+". Ha marcado "+golesMarcados;
     }
     public boolean jugarConLasManos() {
     	return false;

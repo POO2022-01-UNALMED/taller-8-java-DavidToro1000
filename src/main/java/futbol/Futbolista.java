@@ -16,25 +16,15 @@ public abstract class Futbolista implements Comparable<Object>{
 		this.posicion="delantero";
 	}
     public String toString() {
-    	return "El futbolista "+nombre+" tiene "+edad+" y juega de "+posicion;
+    	return "El futbolista "+nombre+" tiene "+edad+", y juega de "+posicion;
     }
     public boolean equals(Futbolista f) {
-    	if (this.nombre.equals(f.nombre)) {
-    		if (this.posicion.equals(f.posicion)) {
-    			if (this.edad==f.edad) {
-    				return(true);
-    			}
-    			else {
-    				return false;
-    			}
-    		}
-    		else {
-    			return false;
-    		}
-    	}
-    	else {
-    		return false;
-    	}
+    	if(this == f) {
+			return true;
+		}
+		else {
+			return false;
+		}
     }
     public abstract boolean jugarConLasManos();
 	public String getNombre() {
